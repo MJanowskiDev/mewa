@@ -12,15 +12,18 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+export const _Button = () => <Button label="This is button component" />;
+
 export const Default: Story = {
   args: {
     label: 'Hello',
+    id: 'button-default',
   },
 };
 
 export const Primary: Story = {
   args: {
-    label: 'Hello',
+    label: crypto.randomUUID(),
     bgColor: 'amethyst',
     color: 'emerald',
   },

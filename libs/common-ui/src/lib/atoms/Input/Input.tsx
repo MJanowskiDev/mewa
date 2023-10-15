@@ -24,6 +24,7 @@ export const Input = ({
   className,
   inputState,
   labelPosition = 'above',
+  ...rest
 }: Props & InputHTMLAttributes<HTMLInputElement>) => {
   const inputClasses = clsx(
     'px-1 py-0.5',
@@ -60,6 +61,7 @@ export const Input = ({
           className={inputClasses}
           id={id}
           type={type}
+          {...rest}
         />
       </div>
     </div>

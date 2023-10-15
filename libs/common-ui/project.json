@@ -69,6 +69,9 @@
     },
     "chromatic":{
       "command": "npx nx build-storybook common-ui npx && npx chromatic --project-token=${TOKEN} -d=dist/storybook/common-ui"
+    },
+    "chromatic-force-rebuild":{
+      "command": "npx nx build-storybook common-ui npx && npx chromatic --force-rebuild --project-token=${TOKEN} -d=dist/storybook/common-ui"
     }
   }
 }

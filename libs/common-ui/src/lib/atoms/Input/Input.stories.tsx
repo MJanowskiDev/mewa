@@ -21,11 +21,41 @@ export const Default: Story = {
   },
 };
 
-export const Email: Story = {
+export const Outlined: Story = {
   args: {
-    type: 'email',
-    id: 'email-input',
+    type: 'text',
+    id: 'default-input',
+    label: 'Text Input',
+    placeholder: 'Placeholder',
+    variant: 'filled',
+  },
+};
+
+export const Errored: Story = {
+  args: {
+    type: 'text',
+    id: 'errored-input',
+    label: 'Text Input',
+    placeholder: 'Placeholder',
+    inputState: 'error',
+  },
+};
+
+export const Small: Story = {
+  args: {
+    type: 'text',
+    id: 'small-text-input',
     label: 'Email',
+    inputSize: 'small',
+  },
+};
+
+export const InlineLabel: Story = {
+  args: {
+    type: 'text',
+    id: 'inline-label-text-input',
+    label: 'Email',
+    labelPosition: 'inline',
   },
 };
 
